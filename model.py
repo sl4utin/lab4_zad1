@@ -7,7 +7,7 @@ class Notes_text(BaseModel):
     text: str = None
 
 class Notes_info(BaseModel):
-    created: datetime
+    creat: datetime
     updated: datetime
 
 class Notes_create(BaseModel):
