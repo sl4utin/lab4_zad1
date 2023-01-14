@@ -77,7 +77,7 @@ def get_info(token: str, id:int):
         with open(str(id)+".json", "r") as file:
             notes = json.load(file)
         note = notes['data']
-        c_d = datetime.strptime(note['creat'],"%Y-%m-%d %H:%M:%S.%f")
+        c_d = datetime.strptime(note['created'],"%Y-%m-%d %H:%M:%S.%f")
         u_d = datetime.strptime(note['updated'],"%Y-%m-%d %H:%M:%S.%f")
         a = Notes_info(creat=c_d, updated=u_d)
         return a
